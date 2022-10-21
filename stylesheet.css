@@ -1,0 +1,31 @@
+.page {
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-areas: "header header"
+                        "side title"
+                        ". main"
+                        "footer footer";
+    column-gap: 50px;
+}
+
+div.header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    grid-area: header;
+}
+
+div.title {
+    grid-area: title;
+}
+
+div.main {
+    grid-area: main;
+}
+
+div.footer {
+    background-color: gray;
+    text-align: right;
+    grid-area: footer;
+}
